@@ -1,0 +1,10 @@
+@media screen and (min-width: 321px) and (max-width: 768px){
+    nav {
+        width: 100px;
+        align-items: flex-start;
+    }
+    main {
+        width: calc(100% - 100px);
+        margin-left: 100px;
+    }
+}

@@ -46,10 +46,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
 }
-.logo-spotify-regular, .center-menu {
-    display: none;
-}
-.logo-spotify-small{
+#logo-spotify-small{
     width: 15px;
     color: white;
 }
@@ -65,15 +62,16 @@ ul li {
 .menu-logos ul li {
     margin-bottom: 5px;
 }
-.menu-text, #logo-spotify-regular  {
+.menu-text, #logo-spotify-regular, .center-menu  {
     display: none;
 }
-.download-home {
+.download {
     width: 10px;
 }
-.profile-home {
+.profile {
     background-color: #808080;
     border-radius: 50%;
+    padding: 3px;
 }
 /* Barra di Riproduzione */
 footer {

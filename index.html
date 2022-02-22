@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./asset/css/larger.css">
+    <link rel="stylesheet" href="./asset/css/xs-to-s.css">
     <title>Spotify</title>
 </head>
 <body>
@@ -13,10 +15,10 @@
         <div class="top-menu"> <!-- Parte Superiore -->
             <div class="menu-logos">
                 <ul>
-                    <li class="logo-spotify-small"><img src="./asset/img/logo-small.svg" alt="Logo spotify piccolo" ></li>
+                    <li id="logo-spotify-small"><img src="./asset/img/logo-small.svg" alt="Logo spotify piccolo"></li>
                     <li id="logo-spotify-regular"><img src="./asset/img/logo.svg" alt="logo spotify regular"></li>
-                    <li><img src="./asset/img/home.svg" alt="logo home" class="logo-home"></li>
-                    <li class="menu-text">Home</li>
+                    <li class="home-sidebar"><img src="./asset/img/home.svg" alt="logo home"></li>
+                    <li id="home-text" class="menu-text">Home</li>
                     <li class="search-home"><img src="./asset/img/search.svg" alt="pulsante di ricerca"></li>
                     <li class="menu-text">Cerca</li>
                     <li class="library-home"><img src="./asset/img/libreria.svg" alt="la tua libreria"></li>
@@ -26,15 +28,17 @@
         </div>
 
         <div class="center-menu"> <!-- Parte Centrale -->
-            <h1>ciao</h1>
+            <div class="nav-playlist">
+                <h4 class="nav-playlist-title">PLAYLIST</h4>
+            </div>
         </div>
 
         <div class="bottom-menu"> <!-- Parte Inferiore -->
             <div class="menu-logos">
                 <ul>
-                    <li class="download-home"></li><img src="./asset/img/download.svg" alt="bottone download"></li>
+                    <li class="download sidebar"></li><img src="./asset/img/download.svg" alt="bottone download"></li>
                     <li class="menu-text">Installa App</li>
-                    <li><img src="./asset/img/profile.svg" alt="immagine profilo utente" class="profile-home"></li>
+                    <li class="profile sidebar"><img src="./asset/img/profile.svg" alt="immagine profilo utente"></li>
                     <li class="menu-text">John Doe</li>
                 </ul>
             </div>
@@ -45,7 +49,7 @@
         <span id="upgrade">effettua l'upgrade</span></div>
     </header>
 
-    <main>
+    <main> <!-- Sezione Playlist -->
         <div class="container">
             <div class="music-genres">
                 <ul class="category">
@@ -90,20 +94,22 @@
                     <h3>Sinister</h3>
                     <p class="playlist-description">Subtitle</p>
                 </div>
-                
-                <!-- Creato Per John Doe -->
-                <h4 class="section-title">Creato per John Doe</h4>
-                <p class="playlist-description">Più ascolti, più accurati saranno i suggerimenti.</p>
+            </div>
+            <!-- Creato Per John Doe -->
+            <h4 class="section-title">Creato per John Doe</h4>
+            <p class="playlist-description">Più ascolti, più accurati saranno i suggerimenti.</p>
+            <div class="playlist-section">
                 <div class="playlist">
                     <img src="./asset/img/radar.jpeg" alt="">
                 </div>
                 <div class="playlist">
                     <img src="./asset/img/mixdaily.jpeg" alt="">
                 </div>
-                
-                <!-- Artisti più popolari -->
-                <h4 class="section-title">Artisti più popolari</h4>
-                <p class="playlist-description">Più ascolti, più accurati saranno i suggerimenti.</p>
+            </div>
+            <!-- Artisti più popolari -->
+            <h4 class="section-title">Artisti più popolari</h4>
+            <p class="playlist-description">Più ascolti, più accurati saranno i suggerimenti.</p>
+            <div class="playlist-section">
                 <div class="playlist">
                     <img src="./asset/img/youg.jpeg" alt="" class="last-section">
                 </div>
