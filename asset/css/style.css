@@ -6,26 +6,29 @@
 body {
     font-family: sans-serif;
 }
+/* Sezione Upgrade */
 header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     position: fixed;
     background-color: #080B12;
-    height: 10vh;
+    height: 7vh;
     width: 100%;
     position: relative;
 }
-header div {
-    position:absolute;
-    right: 5px;
-    top: 12px;
+#upgrade {
+    display: flex;
     border: 1px solid white;
     color: white;
-    padding: 8px 30px;
+    padding: 8px 25px;
     border-radius: 50px;
     text-transform: uppercase;
     font-size: 0.5em;
     text-align: center;
     cursor: pointer;
 }
+/* Menù di Sinistra */
 nav {
     position: fixed;
     display: flex;
@@ -33,8 +36,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: black;
-    height: 90vh;
-    width: 8vw;
+    height: 92vh;
+    width: 9vw;
     z-index: 1;
 }
 .top-menu, .bottom-menu {
@@ -43,12 +46,12 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
 }
-.logo-spotify-regular {
+.logo-spotify-regular, .center-menu {
     display: none;
 }
 .logo-spotify-small{
     width: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: white;
 }
 .menu-logos {
@@ -57,10 +60,13 @@ nav {
     cursor: pointer;
     text-align: center;
 }
-.menu-logos img {
+ul li {
+    list-style-type: none;
+}
+.menu-logos ul li {
     margin-bottom: 5px;
 }
-.menu-logos span {
+.menu-text, #logo-spotify-regular  {
     display: none;
 }
 .download-home {
@@ -70,8 +76,9 @@ nav {
     background-color: #808080;
     border-radius: 50%;
 }
+/* Barra di Riproduzione */
 footer {
-    height: 10vh;
+    height: 8vh;
     width: 100vw;
     background-color: #282828;
     position: fixed;
@@ -121,7 +128,9 @@ footer {
     display: flex;
     align-items: center;
     font-size: 0.5em;
-    margin: 10px 0;
+    margin: 7px 0;
+    margin-left: 20px;
+    
 }
 .mid-buttons i {
     min-width: 20px;
@@ -129,32 +138,108 @@ footer {
 .play-button {
     border: 2px solid white;
     padding: 4px;
-    margin-right: 20px;
+    margin-right: 10px;
     border-radius: 50px;
     text-align: center;
 }
 .song-progress {
-    font-size: 0.5em;
+    font-size: 0.4em;
     font-weight: bold;
     display: flex;
     align-items: center;
+    margin-left: 15px;
 }
-.progress-bar {
+.bar {
     height: 2px;
-    width: 50px;
     background-color: rgba(255, 255, 255, 0.5);
     display: inline-block;
     border-radius: 5px;
-    padding: 0 35px;
-    margin: 0 10px;
     position: relative;
 }
-.time-spent {
+.progress {
+    padding: 0 35px;
+    margin: 0 5px;
+    
+}
+.volume {
+    width: 40px;
+}
+.level {
     position: absolute;
-    width: 20px;
+    height: 2px;
     background-color: white;
     border-radius: 5px;
-    height: 2px;
     left: 0;
     top: 0;
+}
+.time {
+    width: 30%;
+}
+.active-volume {
+    width: 30%;
+}
+.right-side {
+    color: white;
+    display: flex;
+    font-size: 0.5em;
+    align-items: center;
+}
+.right-side i {
+    margin: 0 5px;
+}
+/* Sezione centrale */
+main {
+    background-color: #141922;
+    height: 85vh;
+    margin-left: 9vw;
+}
+.container {
+    width: 92%;
+    height: 100%;
+    margin: 0 auto;
+}
+.category{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.category li {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 0.45em;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    padding: 10px;
+}
+.section-title {
+    color: white;
+    margin-top: 10px;
+}
+.playlist-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.playlist {
+    display: flex;
+    margin-top: 20px;
+    flex-basis: 40%;
+    background-size: cover;
+    background-position: center;
+}
+.playlist > h3,p {
+    color: white;
+    font-size: 0.6em;
+    text-align: center;
+    margin-top: 150px;
+}
+.heavy-metal {
+    background-image: url(../img/metal_lifting.jpg);
+}
+.stranger-things {
+    background-image: url(../img/stranger.jpeg);
+}
+.quiet-place {
+    background-image: url(../img/aquietplace.jpeg);
 }

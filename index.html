@@ -13,13 +13,15 @@
         <div class="top-menu"> <!-- Parte Superiore -->
             <img src="./asset/img/logo-small.svg" alt="Logo spotify piccolo" class="logo-spotify-small">
             <div class="menu-logos">
-                <img src="./asset/img/logo.svg" alt="logo spotify regular" class="logo-spotify-regular">
-                <img src="./asset/img/home.svg" alt="logo home" class="logo-home">
-                <span>Home</span>
-                <img src="./asset/img/search.svg" alt="pulsante di ricerca" class="search-home">
-                <span>Cerca</span>
-                <img src="./asset/img/libreria.svg" alt="la tua libreria" class="library-home"> 
-                <span>La tua libreria</span>
+                <ul>
+                    <li id="logo-spotify-regular"><img src="./asset/img/logo.svg" alt="logo spotify regular"></li>
+                    <li><img src="./asset/img/home.svg" alt="logo home" class="logo-home"></li>
+                    <li class="menu-text">Home</li>
+                    <li class="search-home"><img src="./asset/img/search.svg" alt="pulsante di ricerca"></li>
+                    <li class="menu-text">Cerca</li>
+                    <li class="library-home"><img src="./asset/img/libreria.svg" alt="la tua libreria"></li>
+                    <li class="menu-text">La tua libreria</li>
+                </ul>
             </div>   
         </div>
 
@@ -29,19 +31,45 @@
 
         <div class="bottom-menu"> <!-- Parte Inferiore -->
             <div class="menu-logos">
-                <img src="./asset/img/download.svg" alt="bottone download" class="download-home">
-                <span>Installa App</span>
-                <img src="./asset/img/profile.svg" alt="immagine profilo utente" class="profile-home">
-                <span>John Doe</span>
+                <ul>
+                    <li class="download-home"></li><img src="./asset/img/download.svg" alt="bottone download"></li>
+                    <li class="menu-text">Installa App</li>
+                    <li><img src="./asset/img/profile.svg" alt="immagine profilo utente" class="profile-home"></li>
+                    <li class="menu-text">John Doe</li>
+                </ul>
             </div>
         </div>
     </nav>
 
     <header> <!-- Upgrade -->
-        <div>effettua l'upgrade</div>
+        <span id="upgrade">effettua l'upgrade</span></div>
     </header>
 
     <main>
+        <div class="container">
+            <div class="music-genres">
+                <ul class="category">
+                    <li id="in-evidenza">in evidenza</li>
+                    <li>podcast</li>
+                    <li>classifiche</li>
+                    <li>generi e mood</li>
+                    <li>nuove uscite</li>
+                    <li>scopri</li>
+                </ul>
+            </div>
+
+            
+            <h4 class="section-title">Recently played</h4>
+            <div class="playlist-title">
+                <div class="playlist heavy-metal">
+                    <h3>Heavy Metal</h3>
+                    <p>Subtitle</p>
+                </div>
+                <div class="playlist stranger-things"></div>
+                <div class="playlist quiet-place"></div>
+
+            </div>
+        </div>
         
     </main>
 
