@@ -3,4 +3,70 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    font-family: sans-serif;
+}
+header {
+    position: fixed;
+    background-color: #080B12;
+    height: 10vh;
+    width: 100%;
+    position: relative;
+}
+header div {
+    position:absolute;
+    right: 5px;
+    top: 12px;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 0.5em;
+    text-align: center;
+    cursor: pointer;
+}
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 90vh;
+    width: 8vw;
+    z-index: 1;
+}
+.top-menu, .bottom-menu {
+    display: flex;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.logo-spotify-regular {
+    display: none;
+}
+.logo-spotify-small{
+    width: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+.menu-logos {
+    width: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    text-align: center;
+}
+.menu-logos img {
+    margin-bottom: 5px;
+}
+.menu-logos span {
+    display: none;
+}
+.download-home {
+    width: 10px;
+}
+.profile-home {
+    background-color: #808080;
+    border-radius: 50%;
+}
