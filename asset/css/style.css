@@ -78,6 +78,7 @@ footer {
     bottom: 0;
     left: 0;
     display: flex;
+    justify-content: space-between;
 }
 .left-side {
     display: flex;
@@ -108,4 +109,52 @@ footer {
 }
 .add-playlist i {
     margin-bottom: 2px;
+}
+.mid-side {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mid-buttons {
+    display: flex;
+    align-items: center;
+    font-size: 0.5em;
+    margin: 10px 0;
+}
+.mid-buttons i {
+    min-width: 20px;
+}
+.play-button {
+    border: 2px solid white;
+    padding: 4px;
+    margin-right: 20px;
+    border-radius: 50px;
+    text-align: center;
+}
+.song-progress {
+    font-size: 0.5em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.progress-bar {
+    height: 2px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 35px;
+    margin: 0 10px;
+    position: relative;
+}
+.time-spent {
+    position: absolute;
+    width: 20px;
+    background-color: white;
+    border-radius: 5px;
+    height: 2px;
+    left: 0;
+    top: 0;
 }
