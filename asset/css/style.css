@@ -51,7 +51,6 @@ nav {
 }
 .logo-spotify-small{
     width: 15px;
-    margin-bottom: 15px;
     color: white;
 }
 .menu-logos {
@@ -87,6 +86,7 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+/* Riproduzione SX */
 .left-side {
     display: flex;
     align-items: center;
@@ -97,7 +97,7 @@ footer {
     margin-right: 5px;
 }
 .song-description p {
-    font-size: 0.5em;
+    font-size: 0.7em;
     color: white;
     font-weight: bold;
 }
@@ -117,7 +117,9 @@ footer {
 .add-playlist i {
     margin-bottom: 2px;
 }
+/* Riproduzione MID */
 .mid-side {
+    width: 60%;
     color: white;
     display: flex;
     flex-direction: column;
@@ -128,7 +130,7 @@ footer {
     display: flex;
     align-items: center;
     font-size: 0.5em;
-    margin: 7px 0;
+    margin: 7px 15px;
     margin-left: 20px;
     
 }
@@ -147,9 +149,11 @@ footer {
     font-weight: bold;
     display: flex;
     align-items: center;
-    margin-left: 15px;
+    width: 70%;
+    margin: 0 auto;
 }
 .bar {
+    width: 80%;
     height: 2px;
     background-color: rgba(255, 255, 255, 0.5);
     display: inline-block;
@@ -162,7 +166,7 @@ footer {
     
 }
 .volume {
-    width: 40px;
+    width: 60px;
 }
 .level {
     position: absolute;
@@ -183,19 +187,26 @@ footer {
     display: flex;
     font-size: 0.5em;
     align-items: center;
+    margin-right: 10px;
 }
+/* Riproduzione DX */
 .right-side i {
-    margin: 0 5px;
+    margin: 0 5%;
 }
 /* Sezione centrale */
 main {
     background-color: #141922;
     height: 85vh;
     margin-left: 9vw;
+    overflow-y: auto;
+}
+@media screen and (max-width:320px){
+    main {
+        max-width: 320px;
+    }
 }
 .container {
     width: 92%;
-    height: 100%;
     margin: 0 auto;
 }
 .category{
@@ -211,35 +222,45 @@ main {
     color: rgba(255, 255, 255, 0.5);
     display: flex;
     padding: 10px;
+    position: relative;
+}
+li#in-evidenza::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 20px;
+    background-color: rgb(173,255,47);
 }
 .section-title {
     color: white;
-    margin-top: 10px;
+    margin: 10px 0;
 }
-.playlist-title {
+.playlist-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .playlist {
-    display: flex;
-    margin-top: 20px;
-    flex-basis: 40%;
-    background-size: cover;
-    background-position: center;
-}
-.playlist > h3,p {
-    color: white;
-    font-size: 0.6em;
     text-align: center;
-    margin-top: 150px;
+    margin: 10px 0;
+    width: calc((100% / 2) - 10px);
 }
-.heavy-metal {
-    background-image: url(../img/metal_lifting.jpg);
+.playlist img {
+    max-width: 100%;
 }
-.stranger-things {
-    background-image: url(../img/stranger.jpeg);
+.playlist h3 {
+    font-size: 0.8em;
+    color: white;
+    margin-top: 10px;
 }
-.quiet-place {
-    background-image: url(../img/aquietplace.jpeg);
+.playlist-description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.7em;
+    margin: 10px 0;
+}
+.last-section {
+    border-radius: 50%;
 }

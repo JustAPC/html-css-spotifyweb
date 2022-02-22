@@ -11,9 +11,9 @@
 <body>
     <nav> <!-- Menu sinistro -->
         <div class="top-menu"> <!-- Parte Superiore -->
-            <img src="./asset/img/logo-small.svg" alt="Logo spotify piccolo" class="logo-spotify-small">
             <div class="menu-logos">
                 <ul>
+                    <li class="logo-spotify-small"><img src="./asset/img/logo-small.svg" alt="Logo spotify piccolo" ></li>
                     <li id="logo-spotify-regular"><img src="./asset/img/logo.svg" alt="logo spotify regular"></li>
                     <li><img src="./asset/img/home.svg" alt="logo home" class="logo-home"></li>
                     <li class="menu-text">Home</li>
@@ -57,20 +57,61 @@
                     <li>scopri</li>
                 </ul>
             </div>
-
-            
+            <!-- Playlist Recenti -->
             <h4 class="section-title">Recently played</h4>
-            <div class="playlist-title">
-                <div class="playlist heavy-metal">
+            <div class="playlist-section"> 
+                <div class="playlist">
+                    <img src="./asset/img/metal_lifting.jpg" alt="">
                     <h3>Heavy Metal</h3>
-                    <p>Subtitle</p>
+                    <p class="playlist-description">Subtitle</p>
                 </div>
-                <div class="playlist stranger-things"></div>
-                <div class="playlist quiet-place"></div>
-
+                <div class="playlist">
+                    <img src="./asset/img/stranger.jpeg" alt="">
+                    <h3>Stranger Things, Vol 1 (a Netflix Original Series Soundtrack)</h3>
+                    <p class="playlist-description">Kylie Dixon & Michael Stein</p>
+                </div>  
+                <div class="playlist">
+                    <img src="./asset/img/aquietplace.jpeg" alt="">
+                    <h3>A quiet place</h3>
+                    <p class="playlist-description">Subtitle</p>
+                </div> 
+                <div class="playlist">
+                    <img src="./asset/img/split.jpeg" alt="">
+                    <h3>Split</h3>
+                    <p class="playlist-description">Subtitle</p>
+                </div> 
+                <div class="playlist">
+                    <img src="./asset/img/cure.jpeg" alt="">
+                    <h3>A cure for wellness</h3>
+                    <p class="playlist-description">Subtitle</p>
+                </div>   
+                <div class="playlist">
+                    <img src="./asset/img/sinister.jpeg" alt="">
+                    <h3>Sinister</h3>
+                    <p class="playlist-description">Subtitle</p>
+                </div>
+                
+                <!-- Creato Per John Doe -->
+                <h4 class="section-title">Creato per John Doe</h4>
+                <p class="playlist-description">Più ascolti, più accurati saranno i suggerimenti.</p>
+                <div class="playlist">
+                    <img src="./asset/img/radar.jpeg" alt="">
+                </div>
+                <div class="playlist">
+                    <img src="./asset/img/mixdaily.jpeg" alt="">
+                </div>
+                
+                <!-- Artisti più popolari -->
+                <h4 class="section-title">Artisti più popolari</h4>
+                <p class="playlist-description">Più ascolti, più accurati saranno i suggerimenti.</p>
+                <div class="playlist">
+                    <img src="./asset/img/youg.jpeg" alt="" class="last-section">
+                </div>
+                <div class="playlist">
+                    <img src="./asset/img/einaudi.jpeg" alt="" class="last-section">
+                </div>
             </div>
         </div>
-        
     </main>
 
     <footer> <!-- Barra di Riproduzione -->
@@ -86,9 +127,6 @@
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-regular fa-folder"></i>
             </div>
-            
-            
-
         </div>
         
         <div class="mid-side"> <!-- Parte Centrale -->
@@ -115,7 +153,6 @@
             <div class="volume bar"><div class="active-volume level"></div></div>
         </div>
 
-        
     </footer>
 </body>
 </html>
