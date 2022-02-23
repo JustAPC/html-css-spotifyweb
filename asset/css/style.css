@@ -29,7 +29,7 @@ header {
     cursor: pointer;
 }
 /* Menù di Sinistra */
-nav {
+aside {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -60,10 +60,24 @@ ul li {
     list-style-type: none;
 }
 .menu-logos ul li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.menu-text {
+    text-decoration: none;
+    color: #808080;
+    font-size: 0.5em;
+    padding-left: 5px;
 }
 .menu-text, #logo-spotify-regular, .center-menu  {
     display: none;
+}
+.fa-plus {
+    padding: 3px ;
+    color: black;
+    background-color: #A3A3A3;
+    font-size: 0.8em;
 }
 .download {
     width: 10px;
@@ -71,7 +85,7 @@ ul li {
 .profile {
     background-color: #808080;
     border-radius: 50%;
-    padding: 3px;
+    padding: 2px;
 }
 /* Barra di Riproduzione */
 footer {
@@ -117,7 +131,7 @@ footer {
 }
 /* Riproduzione MID */
 .mid-side {
-    width: 60%;
+    width: 40%;
     color: white;
     display: flex;
     flex-direction: column;
@@ -147,6 +161,7 @@ footer {
     font-weight: bold;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 70%;
     margin: 0 auto;
 }
