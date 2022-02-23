@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./asset/css/wider.css">
     <link rel="stylesheet" href="./asset/css/xs-to-s.css">
+    <link rel="stylesheet" href="./asset/css/s-to-m.css">
+    <link rel="stylesheet" href="./asset/css/m-to-l.css">
     <title>Spotify</title>
 </head>
 <body>
@@ -20,15 +22,15 @@
                     <li id="logo-spotify-regular"><img src="./asset/img/logo.svg" alt="logo spotify regular"></li>
                     <li class="home-aside">
                         <img src="./asset/img/home.svg" alt="logo home">
-                        <a href="#" id="home-text" class="menu-text"> Home</a>
+                        <a href="#" class="menu-text active"> Home</a>
                     </li>
                     
-                    <li class="search-aside">
+                    <li>
                         <img src="./asset/img/search.svg" alt="pulsante di ricerca">
                         <a href="#" class="menu-text">Cerca</a>
                     </li>
                 
-                    <li class="library-aside">
+                    <li>
                         <img src="./asset/img/libreria.svg" alt="la tua libreria">
                         <a href="#" class="menu-text">La tua libreria</a>
                     </li>
@@ -39,23 +41,37 @@
 
         <div class="center-menu"> <!-- Parte Centrale -->
             <div class="aside-playlist">
-                <h5 class="aside-playlist-title">PLAYLIST</h5>
-                <i class="fa-solid fa-plus"></i>
-                <p class="menu-text">Crea Playlist</p>
+                <h5 class="aside-playlist-title">playlist</h5>
+                <ul>
+                    <li class="create-playlist">
+                        <i class="fa-solid fa-plus"></i>
+                        <p class="menu-text">Crea Playlist</p> 
+                    </li>
+                    <li>
+                        <p class="playlist-name">Nome Playlist</p>
+                        <p class="playlist-name">Nome Playlist</p>
+                        <p class="playlist-name">Nome Playlist</p>
+                        <p class="playlist-name">Nome Playlist</p>
+                        <p class="playlist-name">Nome Playlist</p>
+                        <p class="playlist-name">Nome Playlist</p>
+                        <p class="playlist-name">Nome Playlist</p>
+                    </li>
+
+                </ul>
             </div>
         </div>
 
         <div class="bottom-menu"> <!-- Parte Inferiore -->
             <div class="menu-logos">
                 <ul>
-                    <li class="download sidebar">
+                    <li class="download">
                         <img src="./asset/img/download.svg" alt="bottone download">
                         <a href="#" class="menu-text">Installa App</a>
                     </li>
                     
-                    <li class="profile sidebar">
+                    <li class="profile">
                         <img src="./asset/img/profile.svg" alt="immagine profilo utente">
-                        <a href="#" class="menu-text">John Doe</a>
+                        <a href="#" class="menu-text active">John Doe</a>
                     </li>
                     
                 </ul>
