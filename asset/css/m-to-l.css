@@ -1,4 +1,5 @@
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1441px){
+    
     .playlist {
         width: calc((100% / 6) - 10px);
     }
@@ -15,9 +16,6 @@
         width: 2px;
         background-color: rgb(173,255,47);
     }
-    aside {
-        font-size: 1.3em;
-    }
     .song-description p{
         font-size: 1em;
     }
@@ -33,5 +31,19 @@
     .profile {
         padding: 4px;
     }
-}
+    header, main, aside{
+        font-size: 1.7em;
+    }
+    .category {
+        font-size: 1.3em;
+    }
+    .right-side {
+        font-size: 0.8em;
+    }
+    .mid-buttons {
+        font-size: 1.2em;
+    }
+    .mid-side {
+        width: 40%;
+    }
 }

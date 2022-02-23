@@ -13,53 +13,57 @@
     <title>Spotify</title>
 </head>
 <body>
+    
     <aside> <!-- Menu sinistro -->
         
-        <div class="top-menu"> <!-- Parte Superiore -->
-            <div class="menu-logos">
-                <ul>
-                    <li id="logo-spotify-small"><img src="./asset/img/logo-small.svg" alt="Logo spotify piccolo"></li>
-                    <li id="logo-spotify-regular"><img src="./asset/img/logo.svg" alt="logo spotify regular"></li>
-                    <li class="home-aside">
-                        <img src="./asset/img/home.svg" alt="logo home">
-                        <a href="#" class="menu-text active"> Home</a>
-                    </li>
+        <div class="nav-top">
+            <div class="top-menu"> <!-- Parte Superiore -->
+                <div class="menu-logos">
+                    <ul>
+                        <li id="logo-spotify-small"><img src="./asset/img/logo-small.svg" alt="Logo spotify piccolo"></li>
+                        <li id="logo-spotify-regular"><img src="./asset/img/logo.svg" alt="logo spotify regular"></li>
+                        <li class="home-aside">
+                            <img src="./asset/img/home.svg" alt="logo home">
+                            <a href="#" class="menu-text active"> Home</a>
+                        </li>
+                        
+                        <li>
+                            <img src="./asset/img/search.svg" alt="pulsante di ricerca">
+                            <a href="#" class="menu-text">Cerca</a>
+                        </li>
                     
-                    <li>
-                        <img src="./asset/img/search.svg" alt="pulsante di ricerca">
-                        <a href="#" class="menu-text">Cerca</a>
-                    </li>
-                
-                    <li>
-                        <img src="./asset/img/libreria.svg" alt="la tua libreria">
-                        <a href="#" class="menu-text">La tua libreria</a>
-                    </li>
-                    
-                </ul>
-            </div>   
-        </div>
-
-        <div class="center-menu"> <!-- Parte Centrale -->
-            <div class="aside-playlist">
-                <h5 class="aside-playlist-title">playlist</h5>
-                <ul>
-                    <li class="create-playlist">
-                        <i class="fa-solid fa-plus"></i>
-                        <p class="menu-text">Crea Playlist</p> 
-                    </li>
-                    <li>
-                        <p class="playlist-name">Nome Playlist</p>
-                        <p class="playlist-name">Nome Playlist</p>
-                        <p class="playlist-name">Nome Playlist</p>
-                        <p class="playlist-name">Nome Playlist</p>
-                        <p class="playlist-name">Nome Playlist</p>
-                        <p class="playlist-name">Nome Playlist</p>
-                        <p class="playlist-name">Nome Playlist</p>
-                    </li>
-
-                </ul>
+                        <li>
+                            <img src="./asset/img/libreria.svg" alt="la tua libreria">
+                            <a href="#" class="menu-text">La tua libreria</a>
+                        </li>
+                        
+                    </ul>
+                </div>   
+            </div>
+    
+            <div class="center-menu"> <!-- Parte Centrale -->
+                <div class="aside-playlist">
+                    <h5 class="aside-playlist-title">playlist</h5>
+                    <ul>
+                        <li class="create-playlist">
+                            <i class="fa-solid fa-plus"></i>
+                            <p class="menu-text">Crea Playlist</p> 
+                        </li>
+                        <li>
+                            <p class="playlist-name">Nome Playlist</p>
+                            <p class="playlist-name">Nome Playlist</p>
+                            <p class="playlist-name">Nome Playlist</p>
+                            <p class="playlist-name">Nome Playlist</p>
+                            <p class="playlist-name">Nome Playlist</p>
+                            <p class="playlist-name">Nome Playlist</p>
+                            <p class="playlist-name">Nome Playlist</p>
+                        </li>
+    
+                    </ul>
+                </div>
             </div>
         </div>
+        
 
         <div class="bottom-menu"> <!-- Parte Inferiore -->
             <div class="menu-logos">
@@ -99,56 +103,88 @@
             <h4 class="section-title">Recently played</h4>
             <div class="playlist-section"> 
                 <div class="playlist">
-                    <img src="./asset/img/metal_lifting.jpg" alt="">
+                    <div class="playlist-img">
+                        <div class="play-overlay"><i class="far fa-play-circle"></i></div>
+                        <img src="./asset/img/metal_lifting.jpg" alt=""> 
+                    </div>
                     <h3>Heavy Metal</h3>
                     <p class="playlist-description">Subtitle</p>
                 </div>
                 <div class="playlist">
-                    <img src="./asset/img/stranger.jpeg" alt="">
+                    <div class="playlist-img">
+                        <div class="play-overlay"><i class="far fa-play-circle"></i></div>
+                        <img src="./asset/img/stranger.jpeg" alt=""> 
+                    </div>
                     <h3>Stranger Things, Vol 1 (a Netflix Original Series Soundtrack)</h3>
                     <p class="playlist-description">Kylie Dixon & Michael Stein</p>
                 </div>  
                 <div class="playlist">
-                    <img src="./asset/img/aquietplace.jpeg" alt="">
+                    <div class="playlist-img">
+                        <div class="play-overlay"><i class="far fa-play-circle"></i></div>
+                        <img src="./asset/img/aquietplace.jpeg" alt=""> 
+                    </div>
                     <h3>A quiet place</h3>
                     <p class="playlist-description">Subtitle</p>
                 </div> 
                 <div class="playlist">
-                    <img src="./asset/img/split.jpeg" alt="">
+                    <div class="playlist-img">
+                        <div class="play-overlay"><i class="far fa-play-circle"></i></div>
+                        <img src="./asset/img/split.jpeg" alt=""> 
+                    </div>
                     <h3>Split</h3>
                     <p class="playlist-description">Subtitle</p>
                 </div> 
                 <div class="playlist">
-                    <img src="./asset/img/cure.jpeg" alt="">
+                    <div class="playlist-img">
+                        <div class="play-overlay"><i class="far fa-play-circle"></i></div>
+                        <img src="./asset/img/cure.jpeg" alt=""> 
+                    </div>
                     <h3>A cure for wellness</h3>
                     <p class="playlist-description">Subtitle</p>
                 </div>   
                 <div class="playlist">
-                    <img src="./asset/img/sinister.jpeg" alt="">
+                    <div class="playlist-img">
+                        <div class="play-overlay"><i class="far fa-play-circle"></i></div>
+                        <img src="./asset/img/sinister.jpeg" alt=""> 
+                    </div>
                     <h3>Sinister</h3>
                     <p class="playlist-description">Subtitle</p>
                 </div>
             </div>
+
             <!-- Creato Per John Doe -->
             <h4 class="section-title">Creato per John Doe</h4>
             <p class="playlist-description">Più ascolti, più accurati saranno i suggerimenti.</p>
             <div class="playlist-section">
                 <div class="playlist">
-                    <img src="./asset/img/radar.jpeg" alt="">
+                    <div class="playlist-img">
+                        <div class="play-overlay"><i class="far fa-play-circle"></i></div>
+                        <img src="./asset/img/radar.jpeg" alt=""> 
+                    </div>
                 </div>
                 <div class="playlist">
-                    <img src="./asset/img/mixdaily.jpeg" alt="">
+                    <div class="playlist-img">
+                        <div class="play-overlay"><i class="far fa-play-circle"></i></div>
+                        <img src="./asset/img/mixdaily.jpeg" alt=""> 
+                    </div>
                 </div>
             </div>
+            
             <!-- Artisti più popolari -->
             <h4 class="section-title">Artisti più popolari</h4>
             <p class="playlist-description">Più ascolti, più accurati saranno i suggerimenti.</p>
             <div class="playlist-section">
                 <div class="playlist">
-                    <img src="./asset/img/youg.jpeg" alt="" class="last-section">
+                    <div class="playlist-img">
+                        <div class="play-overlay p-over-last"><i class="far fa-play-circle"></i></div>
+                        <img src="./asset/img/youg.jpeg" alt="" class="last-section"> 
+                    </div>
                 </div>
                 <div class="playlist">
-                    <img src="./asset/img/einaudi.jpeg" alt="" class="last-section">
+                    <div class="playlist-img">
+                        <div class="play-overlay p-over-last"><i class="far fa-play-circle"></i></div>
+                        <img src="./asset/img/einaudi.jpeg" alt="" class="last-section"> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -174,7 +210,7 @@
             <div class="mid-buttons"> <!-- Bottoni Riproduzione -->
                 <i class="fa-solid fa-shuffle"></i>
                 <i class="fa-solid fa-backward-step"></i>
-                <i class="fa-solid fa-play play-button"></i>
+                <i id="play-button" class="fa-regular fa-play-circle"></i>
                 <i class="fa-solid fa-forward-step"></i>
                 <i class="fa-solid fa-rotate-right"></i>
             </div>
