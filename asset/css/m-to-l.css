@@ -2,4 +2,36 @@
     .playlist {
         width: calc((100% / 6) - 10px);
     }
+    .menu-logos ul li {
+        width: 25px;
+    }
+    .home-aside::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 75px;
+        transform: translateY(-50%);
+        height: 30px;
+        width: 2px;
+        background-color: rgb(173,255,47);
+    }
+    aside {
+        font-size: 1.3em;
+    }
+    .song-description p{
+        font-size: 1em;
+    }
+    .song-description div {
+        font-size: 0.7em;
+    }
+    .playing-song {
+        width: 40px;
+    }
+    .add-playlist i{
+        font-size: 1.4em;
+    }
+    .profile {
+        padding: 4px;
+    }
+}
 }

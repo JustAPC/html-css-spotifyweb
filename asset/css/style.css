@@ -39,10 +39,11 @@ aside {
     height: 92vh;
     width: 9vw;
     z-index: 1;
+    overflow-y: hidden;
 }
 .top-menu, .bottom-menu {
     display: flex;
-    margin-top: 5px;
+    padding-top: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -59,6 +60,7 @@ aside {
 }
 ul li {
     list-style-type: none;
+    white-space: nowrap;
 }
 .menu-logos ul li {
     margin-bottom: 10px;
@@ -76,7 +78,7 @@ ul li {
 }
 /* Parte Centrale */
 .center-menu {
-    margin-top: -300px;
+    margin-top: -250px;
 }
 .aside-playlist-title {
     font-size: 0.6em;
