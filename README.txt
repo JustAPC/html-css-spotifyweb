@@ -1,0 +1,1 @@
+Quando è possibile vorrei avere un feedback, soprattutto sulla parte finale del file css "wider.css" dove ho ruotato la barra del volume in modo da renderla usufruibile anche su mobile. Grazie!

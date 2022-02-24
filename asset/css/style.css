@@ -221,7 +221,6 @@ footer {
     padding: 0 35px;
     margin: 0 5px;
 }
-
 input[type=range]{
     --range: calc(var(--max) - var(--min));
     --ratio: calc((var(--value) - var(--min)) / var(--range));
@@ -284,23 +283,6 @@ input[type=range].styled-slider.slider-progress:active::-webkit-slider-runnable-
     margin: 0 10px;
 }
 /* Riproduzione DX */
-.volume {
-    width: 60px;
-}
-.level {
-    position: absolute;
-    height: 2px;
-    background-color: white;
-    border-radius: 5px;
-    left: 0;
-    top: 0;
-}
-.time {
-    width: 30%;
-}
-.active-volume {
-    width: 30%;
-}
 .right-side {
     color: white;
     display: flex;
