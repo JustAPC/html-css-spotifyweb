@@ -42,7 +42,14 @@
         width: 90px;
         background-color: rgba(255, 255, 255, 0.5);
     }
+    .left-side {
+        padding-left: 10px;
+    }
+    .right-side {
+        padding-right: 10px;
+    }
 }
+
 @media screen and (min-height: 0px) and (max-height: 300px) {
     header {
         display:none;

@@ -51,7 +51,7 @@
     .download::after {
         width: 130px;
     }
-    .song-progress span {
-        font-size: 1.7em;
+    .song-progression span {
+        font-size: 0.7em;
     }
 }

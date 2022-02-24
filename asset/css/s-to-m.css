@@ -39,9 +39,8 @@
     .mid-buttons {
         font-size: 0.9em;
     }
-
-    .song-progress span {
-        font-size: 1.5em;
+    .song-progression span {
+        font-size: 0.6em;
     }
 }
 
