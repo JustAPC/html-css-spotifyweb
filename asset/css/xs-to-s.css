@@ -21,16 +21,6 @@
         width: 2px;
         background-color: rgb(173,255,47);
     }
-    .download::after {
-        content: "";
-        position: absolute;
-        left: 0px;
-        bottom: -5px;
-        height: 1px;
-        width: 90px;
-        background-color: rgba(255, 255, 255, 0.5);
-    }
-    
     .song-description p{
         font-size: 0.8em;
     }
