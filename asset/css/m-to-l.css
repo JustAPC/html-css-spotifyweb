@@ -42,6 +42,7 @@
         font-size: 0.8em;
     }
     .mid-buttons {
+        width: 80%;
         font-size: 1.2em;
     }
     .mid-side {
@@ -49,5 +50,8 @@
     }
     .download::after {
         width: 130px;
+    }
+    .song-progress span {
+        font-size: 1.7em;
     }
 }

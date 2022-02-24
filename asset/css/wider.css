@@ -30,15 +30,9 @@
     .aside-playlist {
         color: white;
     }
-    .mid-buttons {
-        width: 40%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 0.5em;
-        margin: 1vh auto;
+    .mid-side {
+        
     }
-    
     .download::after {
         content: "";
         position: absolute;
@@ -52,5 +46,21 @@
 @media screen and (min-height: 0px) and (max-height: 300px) {
     header {
         display:none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    .mid-side {
+        width: 50%;
+    }
+    .mid-buttons {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 0.7em;
+        margin-bottom: 8px;
+    }
+    .song-progress span {
+        font-size: 1.3em;
     }
 }
