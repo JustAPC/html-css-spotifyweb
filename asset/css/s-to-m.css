@@ -35,12 +35,16 @@
     }
     .right-side {
         font-size: 0.8em;
+        padding-left: 5%;
     }
     .mid-buttons {
         font-size: 0.9em;
     }
     .song-progression span {
         font-size: 0.6em;
+    }
+    .volume-bar{
+        width: 60px;
     }
 }
 

@@ -212,15 +212,10 @@
                 <i class="fa-solid fa-forward-step"></i>
                 <i class="fa-solid fa-rotate-right"></i>
             </div>
-            <!-- Barra di progressione -->
-            <!-- <div class="song-progress"> 
+            
+            <div class="song-progression"> <!-- Barra di progressione -->
                 <span>0:25</span>
-                <div class="progress bar"><div class="time level"></div></div>
-                <span>4:35</span>
-            </div>  -->
-            <div class="song-progression">
-                <span>0:25</span>
-                <input type="range" min="0" max="40" step="any">
+                <input type="range" min="0" max="40" step="any" class="styled-slider slider-progress">
                 <span>4:25</span>
             </div>
             
@@ -230,9 +225,17 @@
             <i class="fa-solid fa-list"></i>
             <i class="fa-solid fa-desktop"></i>
             <i class="fa-solid fa-volume-high"></i>
-            <div class="volume bar"><div class="active-volume level"></div></div>
+            <input type="range" min="0" max="40" step="any" class="volume-bar styled-slider slider-progress">
         </div>
 
     </footer>
+    <script>
+        for (let e of document.querySelectorAll('input[type="range"].slider-progress')) {
+        e.style.setProperty('--value', e.value);
+        e.style.setProperty('--min', e.min == '' ? '0' : e.min);
+        e.style.setProperty('--max', e.max == '' ? '100' : e.max);
+        e.addEventListener('input', () => e.style.setProperty('--value', e.value));
+        }
+    </script>
 </body>
 </html>

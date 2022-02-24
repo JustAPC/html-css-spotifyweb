@@ -59,7 +59,7 @@
 @media screen and (max-width: 320px) {
     
     .mid-side {
-        width: 50%;
+        width: 90%;
     }
     .mid-buttons {
         width: 90%;
@@ -69,5 +69,14 @@
     }
     .song-progress span {
         font-size: 1.3em;
+    }
+    .volume-bar {
+        display: none;
+    }
+    .volume-bar:active { 
+        display: block;
+        transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        margin-bottom: 100px;
     }
 }

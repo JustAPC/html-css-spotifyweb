@@ -39,4 +39,7 @@
     .song-progression span {
         font-size: 0.5em;
     }
+    .right-side {
+        padding-right: 5px;
+    }
 }
