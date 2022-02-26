@@ -347,6 +347,7 @@ li#in-evidenza::after {
     text-align: center;
     margin: 10px 5px;
     width: calc((100% / 2) - 10px);
+    cursor: pointer;
 }
 .playlist img {
     max-width: 100%;
@@ -365,9 +366,8 @@ li#in-evidenza::after {
     background-color: rgba( 0, 0, 0, 0.5);
     opacity: 0;
 }
-.play-overlay:hover{
+.playlist:hover .play-overlay {
     opacity: 1;
-    cursor: pointer;
 }
 .fa-play-circle {
     color: white;
